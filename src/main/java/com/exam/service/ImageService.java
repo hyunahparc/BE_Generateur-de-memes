@@ -37,7 +37,7 @@ public class ImageService {
 		
 		// 이미지 접근 URL 반환 (ngrok 사용 시 ngrok 도메인으로 변경)
         return "http://localhost:8080/images/" + fileName;
-//        return "https://special-hugely-labrador.ngrok-free.app/images/" + fileName;
+//        return "ngrokdomain/images/" + fileName;
 
 	}
 	
