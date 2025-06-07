@@ -51,13 +51,13 @@ public class ImageService {
 	        <html>
 	        <head>
 	          <meta charset="UTF-8">
-	          <meta property="og:title" content="내 밈">
-	          <meta property="og:description" content="내가 만든 밈을 봐줘!">
+	          <meta property="og:title" content="Mon mème 😎">
+	          <meta property="og:description" content="Regarde le mème que j'ai créé !">
 	          <meta property="og:image" content="http://localhost:8080/images/%s">
 	          <meta property="og:type" content="website">
 	        </head>
 	        <body>
-	          <h1>내가 만든 밈</h1>
+	          <h1>Mon mème 😎</h1>
 	          <img src="http://localhost:8080/images/%s" style="max-width: 100%%;">
 	        </body>
 	        </html>
