@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")  // API 경로에 대해서만 CORS 허용
-                .allowedOrigins("http://localhost:3000", "https://alpaca-wired-noticeably.ngrok-free.app")  // React 개발서버 주소
+                .allowedOrigins("http://localhost:3000", "ngrokdomain")  // React 개발서버 주소
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
     }
     
@@ -20,5 +20,9 @@ public class WebConfig implements WebMvcConfigurer {
         // /images/** 요청을 uploaded-images 폴더에서 읽어오도록 설정
         registry.addResourceHandler("/images/**")
                 .addResourceLocations("file:uploaded-images/");
+        
+        // 공유용 HTML 요청 매핑
+        registry.addResourceHandler("/html/**")
+                .addResourceLocations("file:uploaded-htmls/");
     }
 }
