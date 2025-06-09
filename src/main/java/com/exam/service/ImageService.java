@@ -69,12 +69,12 @@ public class ImageService {
 	    }
 		
 		// 이미지 접근 URL 반환 (ngrok 사용 시 ngrok 도메인으로 변경)
-//        return "http://localhost:8080/images/" + fileName;
+        return "http://localhost:8080/images/" + fileName;
 //        return "ngrokdomain/images/" + fileName;
         
         // 공유할 HTML 파일의 접근 URL 반환
-        return "http://localhost:8080/html/" + htmlName;
-//        return "ngrokdomain" + htmlName;
+//        return "http://localhost:8080/html/" + htmlName;
+//        return "ngrokdomain/html/" + htmlName;
         
 
 	}

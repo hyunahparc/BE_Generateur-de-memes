@@ -22,7 +22,6 @@ public class ImageController {
 		this.imageService = imageService;
 	}
 	
-	// POST /api/images 요청 처리
 	@PostMapping("/upload")
 	public ResponseEntity<String> uploadImage(@RequestBody Map<String, String> request) {
 		// 프론트에서 보내준 JSON에서 "image" 키를 추출 (Base64 문자열)
